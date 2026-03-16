@@ -1,4 +1,3 @@
-#define KB_LAYOUT_ERGOL
 #define MACOS
 #define HT_TWO_THUMB_KEYS
 #define VIM_NAVIGATION

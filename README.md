@@ -4,7 +4,7 @@ Config ZMK pour Charybdis 5x3 + trackball droite, inspiree de Selenium.
 
 ## Profil actif
 
-- `KB_LAYOUT_ERGOL`
+- layout OS: Ergol (firmware en keycodes qwerty)
 - `MACOS`
 - `HT_TWO_THUMB_KEYS` (mode Selenium 34 touches)
 - `VIM_NAVIGATION`
