@@ -22,81 +22,59 @@ Config ZMK pour Charybdis 5x3 + trackball droite, inspiree de Selenium.
 - `7` Pointer
 - `8` Scroll
 
-## Apercu ASCII des touches
+## Apercu ASCII (layout physique 5x3)
 
-Notation: `HRM_X` = home-row mod, `LT` = layer-tap, `MO` = momentary layer.
+Notation: `HRM_X` = home-row mod, `MO` = layer momentary.
 
-Note hardware: base logique Selenium 34 touches, adaptee au Charybdis BT actuel
-avec un 3e pouce gauche ajoute en `MO(POINTER)`.
+Le clavier est documente ici en **5x3 reel** (pas en projection 6x3 Selenium).
 
-### L0 Base (Ergo-L + Vim + 2TK sur Charybdis)
+### L0 Base (Ergo-L + Vim + 2TK)
 
 ```text
-TAB   Q      W      E      R      T   |   Y      U      I      O      P      BSPC
-ESC   A      HRM_S  HRM_D  HRM_F  G   |   H      HRM_J  HRM_K  HRM_L  ;      ENTER
-LSFT  Z      X      C      V      B   |   N      M      ,      .      /      RSFT
+Q      W      E      R      T   |   Y      U      I      O      P
+A      HRM_S  HRM_D  HRM_F  G   |   H      HRM_J  HRM_K  HRM_L  ;
+Z      X      C      V      B   |   N      M      ,      .      /
 
-             MO(PTR) LTH_TK LTH_HM     RTH_HM RTH_RC
+MO(PTR)  LTH_TK  LTH_HM          RTH_HM(SPACE)  RTH_RC
 ```
 
 ### L2 Symbols
 
 ```text
-TRNS  ^      <      >      $      %   |   @      &      *      '      `      TRNS
-TRNS  {      (      )      }      =   |   \      +      -      /      "      TRNS
-TRNS  ~      [      ]      _      #   |   |      !      ;      :      ?      TRNS
-
-             SYM/NUM SPACE  ENTER       TRNS   RALT   TRNS
+^      <      >      $      %   |   @      &      *      '      `
+{      (      )      }      =   |   \      +      -      /      "
+~      [      ]      _      #   |   |      !      ;      :      ?
 ```
 
 ### L3 VimNav
 
 ```text
-TRNS  CAPS   X_CLOSE X_PREV X_NEXT NONE | HOME   PGDN   PGUP   END    DEL    TRNS
-TRNS  X_ALL  X_SAVE  SHTAB  TAB    NONE | LEFT   DOWN   UP     RIGHT  NONE   TRNS
-TRNS  X_UNDO X_CUT   X_COPY X_PASTE X_REDO | NONE NONE  NONE   NONE   NONE   TRNS
-
-             CAPS   LT(FN,DEL) MO(NUMROW)   TRNS MO(FN) OSM(RALT)
+CAPS   X_CLOSE X_PREV X_NEXT DEL | HOME   PGDN   PGUP   END    DEL
+X_ALL  X_SAVE  SHTAB  TAB    -   | LEFT   DOWN   UP     RIGHT  -
+X_UNDO X_CUT   X_COPY X_PASTE X_REDO | -   -      -      -      -
 ```
 
 ### L5 NumRow
 
 ```text
-TRNS  RS(1)  RS(2)  RS(3)  RS(4)  RS(5) | LS(6)  LS(7)  LS(8)  LS(9)  LS(0)  TRNS
-TRNS  1      2      3      4      5     | 6      7      8      9      0      TRNS
-TRNS  NONE   NONE   NONE   NONE   NONE  | -      ,      .      :      /      TRNS
-
-             TRNS   RS(SPC) TRNS         TRNS   LS(SPC) RALT
+1      2      3      4      5   |   6      7      8      9      0
+-      -      -      -      -   |   -      ,      .      :      /
 ```
 
 ### L6 Function
 
 ```text
-TRNS  F1  F2  F3  F4  NONE | NONE C_PREV VOL+ BRI+ SLCK  TRNS
-TRNS  F5  F6  F7  F8  NONE | NONE C_PP   MUTE ALOCK PSCR TRNS
-TRNS  F9  F10 F11 F12 NONE | NONE C_NEXT VOL- BRI- INS   TRNS
-
-             MO(POINTER) TRNS BOOT       SYSRST TRNS STUDIO
-```
-
-### L7 Pointer / L8 Scroll
-
-```text
-Pointer: clics souris sur la main droite + acces MO(SCROLL) au pouce.
-
-... ... ... ... ... ... | ... ... ... ... ... ...
-... ... ... ... ... ... | ... LCLK MCLK RCLK ... ...
-... ... ... ... ... ... | ... ...  ...  ...  ... ...
-
-             ... ... ...             MO(SCROLL) ... ...
+F1     F2     F3     F4     -   |   C_PREV VOL+   BRI+   SLCK   -
+F5     F6     F7     F8     -   |   C_PP   MUTE   ALOCK  PSCR   -
+F9     F10    F11    F12    -   |   C_NEXT VOL-   BRI-   INS    -
 ```
 
 ## Trackball droite
 
 - Device tree: `config/boards/shields/charybdis/charybdis_right.overlay`
 - `compatible = "pixart,pmw3610"`
-- `scroll-layers = <8>`
-- `snipe-layers = <7>`
+- `scroll-layers = <4>`
+- `snipe-layers = <3>`
 
 ## Build CI
 
