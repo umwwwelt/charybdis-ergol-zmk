@@ -29,14 +29,14 @@ Notation: `HRM_X` = home-row mod, `LT` = layer-tap, `MO` = momentary layer.
 Note hardware: base logique Selenium 34 touches, adaptee au Charybdis BT actuel
 avec un 3e pouce gauche ajoute en `MO(POINTER)`.
 
-### L0 Base
+### L0 Base (Ergo-L + Vim + 2TK sur Charybdis)
 
 ```text
 TAB   Q      W      E      R      T   |   Y      U      I      O      P      BSPC
 ESC   A      HRM_S  HRM_D  HRM_F  G   |   H      HRM_J  HRM_K  HRM_L  ;      ENTER
 LSFT  Z      X      C      V      B   |   N      M      ,      .      /      RSFT
 
-             MO(PTR) LTH_TK LTH_HM     RTH_RC RTH_HM RTH_TK
+             MO(PTR) LTH_TK LTH_HM     RTH_HM RTH_RC
 ```
 
 ### L2 Symbols
