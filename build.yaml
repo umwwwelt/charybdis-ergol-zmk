@@ -15,12 +15,6 @@
 include:
   - board: nice_nano_v2
     shield: charybdis_left
-    artifact-name: charybdis_left
-  - board: nice_nano_v2
-    shield: charybdis_right
-    artifact-name: charybdis_right
-  - board: nice_nano_v2
-    shield: charybdis_left
     artifact-name: charybdis_ergol_vim_left
   - board: nice_nano_v2
     shield: charybdis_right
