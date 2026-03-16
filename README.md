@@ -8,7 +8,7 @@ Config ZMK pour Charybdis 5x3 + trackball droite, inspiree de Selenium.
 - `MACOS`
 - `HT_TWO_THUMB_KEYS` (mode Selenium 34 touches)
 - `VIM_NAVIGATION`
-- `LTHUMB_REACH = MO(POINTER)` (3e pouce gauche dedie au pointeur)
+- 3e pouce gauche dedie: `MO(POINTER)`
 
 ## Index des layers
 
@@ -26,8 +26,8 @@ Config ZMK pour Charybdis 5x3 + trackball droite, inspiree de Selenium.
 
 Notation: `HRM_X` = home-row mod, `LT` = layer-tap, `MO` = momentary layer.
 
-Note hardware: le clavier reel est traite en logique 34 touches Selenium (2 thumbs/side)
-avec un 3e pouce gauche ajoute comme acces direct a la couche pointeur.
+Note hardware: base logique Selenium 34 touches, adaptee au Charybdis BT actuel
+avec un 3e pouce gauche ajoute en `MO(POINTER)`.
 
 ### L0 Base
 
@@ -36,7 +36,7 @@ TAB   Q      W      E      R      T   |   Y      U      I      O      P      BSP
 ESC   A      HRM_S  HRM_D  HRM_F  G   |   H      HRM_J  HRM_K  HRM_L  ;      ENTER
 LSFT  Z      X      C      V      B   |   N      M      ,      .      /      RSFT
 
-             LTH_TK LTH_HM MO(PTR)     RTH_RC RTH_HM RTH_TK
+             MO(PTR) LTH_TK LTH_HM     RTH_RC RTH_HM RTH_TK
 ```
 
 ### L2 Symbols
