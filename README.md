@@ -29,15 +29,15 @@ Le clavier est documente ici en **5x3 reel** (pas en projection 6x3 Selenium), d
 
 ```text
 +-------+-------+-------+-------+-------+||+-------+-------+-------+-------+-------+
-| Q     | W     | E     | R     | T     ||| Y     | U     | I     | O     | P     |
-| A     | HRM_S | HRM_D | HRM_F | G     ||| H     | HRM_J | HRM_K | HRM_L | ;     |
-| Z     | X     | C     | V     | B     ||| N     | M     | ,     | .     | /     |
+| Q     | C     | O     | P     | W     ||| J     | M     | D     | !     | Y     |
+| A     | S     | E     | N     | F     ||| L     | R     | T     | I     | U     |
+| Z     | X     | ?     | V     | B     ||| :     | H     | G     | ;     | K     |
 +-------+-------+-------+-------+-------+||+-------+-------+-------+-------+-------+
 |       | MO_PTR|L_TKESC|L_HMBSP|       |||       |R_HMSPC|R_RCENT|       |       |
 +-------+-------+-------+-------+-------+||+-------+-------+-------+-------+-------+
 ```
 
-- `HRM_*` = hold-tap home row (tap lettre, hold modificateur).
+- `L0` affiche les caracteres reels produits avec le layout OS Ergo-L (pas les keycodes firmware QWERTY).
 - `L_TKESC` = hold `LSHIFT`, tap `ESC`; `L_HMBSP` = hold `VIM_NAV`, tap `BACKSPACE`.
 - `R_HMSPC` = hold `NUM_ROW`, tap `SPACE`; `R_RCENT` = hold `SYMBOLS`, tap `ENTER`.
 - `MO_PTR` = `MO(POINTER)` maintenu.
