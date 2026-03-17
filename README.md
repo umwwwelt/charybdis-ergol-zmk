@@ -33,10 +33,14 @@ Le clavier est documente ici en **5x3 reel** (pas en projection 6x3 Selenium), d
 | A     | HRM_S | HRM_D | HRM_F | G     ||| H     | HRM_J | HRM_K | HRM_L | ;     |
 | Z     | X     | C     | V     | B     ||| N     | M     | ,     | .     | /     |
 +-------+-------+-------+-------+-------+||+-------+-------+-------+-------+-------+
-                      +-------+-------+-------+||+-------+-------+
-                      | MO_PTR| L_TKESC|L_HMBSP||| R_HMSPC|R_RCENT|
-                      +-------+-------+-------+||+-------+-------+
+|       | MO_PTR|L_TKESC|L_HMBSP|       |||       |R_HMSPC|R_RCENT|       |       |
++-------+-------+-------+-------+-------+||+-------+-------+-------+-------+-------+
 ```
+
+- `HRM_*` = hold-tap home row (tap lettre, hold modificateur).
+- `L_TKESC` = hold `LSHIFT`, tap `ESC`; `L_HMBSP` = hold `VIM_NAV`, tap `BACKSPACE`.
+- `R_HMSPC` = hold `NUM_ROW`, tap `SPACE`; `R_RCENT` = hold `SYMBOLS`, tap `ENTER`.
+- `MO_PTR` = `MO(POINTER)` maintenu.
 
 ### L2 Symbols
 
@@ -46,10 +50,12 @@ Le clavier est documente ici en **5x3 reel** (pas en projection 6x3 Selenium), d
 | {     | (     | )     | }     | =     ||| \     | +     | -     | /     | "     |
 | ~     | [     | ]     | _     | #     ||| |     | !     | ;     | :     | ?     |
 +-------+-------+-------+-------+-------+||+-------+-------+-------+-------+-------+
-                      +-------+-------+-------+||+-------+-------+
-                      | MO_PTR| SYM_NUM| SPACE ||| RALT  | ▽     |
-                      +-------+-------+-------+||+-------+-------+
+|       | MO_PTR|SYM_NUM| SPACE |       |||       | RALT  |   ▽   |       |       |
++-------+-------+-------+-------+-------+||+-------+-------+-------+-------+-------+
 ```
+
+- `SYM_NUM` = `EZ_SL(NUM_ROW)` (hold `NUM_ROW`, tap one-shot `NUM_ROW`).
+- `RALT` = AltGr; `▽` = transparent (`&trans`).
 
 ### L3 VimNav
 
@@ -59,10 +65,13 @@ Le clavier est documente ici en **5x3 reel** (pas en projection 6x3 Selenium), d
 | X_ALL |X_SAVE | SHTAB | TAB   | •     ||| LEFT  | DOWN  | UP    | RIGHT | •     |
 | X_UNDO| X_CUT | X_COPY|X_PASTE| X_REDO||| •     | •     | •     | •     | •     |
 +-------+-------+-------+-------+-------+||+-------+-------+-------+-------+-------+
-                      +-------+-------+-------+||+-------+-------+
-                      | MO_PTR| CAPS  |FN_DEL ||| MO_FN | ▽     |
-                      +-------+-------+-------+||+-------+-------+
+|       | MO_PTR| CAPS  |FN_DEL |       |||       | MO_FN |   ▽   |       |       |
++-------+-------+-------+-------+-------+||+-------+-------+-------+-------+-------+
 ```
+
+- `X_*` = raccourcis OS (fermer, precedent, suivant, copier/coller, etc.).
+- `FN_DEL` = `LT(FUNCTION,DEL)` (hold `FUNCTION`, tap `DEL`).
+- `MO_FN` = `MO(FUNCTION)` maintenu.
 
 ### L5 NumRow
 
@@ -72,10 +81,12 @@ Le clavier est documente ici en **5x3 reel** (pas en projection 6x3 Selenium), d
 | •     | •     | •     | •     | •     ||| •     | ,     | .     | :     | /     |
 | •     | •     | •     | •     | •     ||| •     | •     | •     | •     | •     |
 +-------+-------+-------+-------+-------+||+-------+-------+-------+-------+-------+
-                      +-------+-------+-------+||+-------+-------+
-                      | MO_PTR| ▽     | RS_SPC||| LS_SPC| ▽     |
-                      +-------+-------+-------+||+-------+-------+
+|       | MO_PTR|   ▽   |RS_SPC |       |||       |LS_SPC |   ▽   |       |       |
++-------+-------+-------+-------+-------+||+-------+-------+-------+-------+-------+
 ```
+
+- `RS_SPC` / `LS_SPC` = `Shift+Space` droite/gauche.
+- `▽` = transparent (`&trans`).
 
 ### L6 Function
 
@@ -85,33 +96,15 @@ Le clavier est documente ici en **5x3 reel** (pas en projection 6x3 Selenium), d
 | F5    | F6    | F7    | F8    | •     ||| C_PP  | MUTE  | ALOCK | PSCR  | •     |
 | F9    | F10   | F11   | F12   | •     |||C_NEXT | VOL-  | BRI-  | INS   | •     |
 +-------+-------+-------+-------+-------+||+-------+-------+-------+-------+-------+
-                      +-------+-------+-------+||+-------+-------+
-                      | MO_PTR| ▽     | BOOT  ||| RESET |STUDIO |
-                      +-------+-------+-------+||+-------+-------+
+|       | MO_PTR|   ▽   | BOOT  |       |||       | RESET |STUDIO |       |       |
++-------+-------+-------+-------+-------+||+-------+-------+-------+-------+-------+
 ```
 
-### Legende detaillee
-
-- `▽` = touche transparente (`&trans`), la couche inferieure decide.
-- `•` = touche non assignee (`&none`), aucun evenement n'est emis.
-- `MO_PTR` = `MO(POINTER)`, active la couche pointeur tant que maintenue.
-- `HRM_X` = hold-tap home row (`tap-preferred`): tap = lettre, hold = mod.
-- `HRM_S`/`HRM_D`/`HRM_F` = `LGUI`/`LCTL`/`LALT` en hold, `S`/`D`/`F` en tap.
-- `HRM_J`/`HRM_K`/`HRM_L` = `LALT`/`RCTL`/`RGUI` en hold, `J`/`K`/`L` en tap.
-- `MO(LAYER)` = active `LAYER` uniquement pendant le maintien (momentary layer).
-- `FN_DEL` = `LT(FUNCTION,DEL)`: hold `FUNCTION`, tap `DEL`.
-- `MO_FN` = `MO(FUNCTION)`, actif seulement en maintien.
-- `L_TKESC` = hold `LSHIFT`, tap `ESC` (`&mt LSHIFT ESC`).
-- `L_HMBSP` = hold `VIM_NAV`, tap `BACKSPACE` (`&sc VIM_NAV BACKSPACE`, `hold-preferred`).
-- `R_HMSPC` = hold `NUM_ROW`, tap `SPACE` (`&lt NUM_ROW SPACE`, `tap-preferred`).
-- `R_RCENT` = hold `SYMBOLS`, tap `ENTER` (`&sc SYMBOLS ENTER`, `hold-preferred`).
-- `SYM_NUM` = `EZ_SL(NUM_ROW)`: hold = `NUM_ROW`, tap = one-shot `NUM_ROW`.
-- `RS_SPC` / `LS_SPC` = `Shift+Space` droite/gauche.
 - `BOOT` = bootloader, `RESET` = reset firmware, `STUDIO` = `studio_unlock`.
-- `X_*` = raccourcis edition/navigation OS (fermer, precedent, suivant, copier, coller...).
 - `C_PREV`/`C_PP`/`C_NEXT` = controles media (precedent, play/pause, suivant).
 - `VOL+`/`VOL-` = volume, `BRI+`/`BRI-` = luminosite ecran.
 - `ALOCK` = verrouillage alphabetique (`C_AL_LOCK`), `SLCK` = Scroll Lock.
+- `•` = touche non assignee (`&none`).
 
 ## Trackball droite
 
