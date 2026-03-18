@@ -33,12 +33,12 @@
 #endif
 
 #if defined HT_HOME_ROW_MODS || defined HT_TWO_THUMB_KEYS
-  #define HRM_S &hrm LGUI S
-  #define HRM_D &hrm LCTL D
+  #define HRM_S &hrm LCTL S
+  #define HRM_D &hrm LGUI D
   #define HRM_F &hrm LALT F
   #define HRM_J &hrm LALT J
-  #define HRM_K &hrm RCTL K
-  #define HRM_L &hrm RGUI L
+  #define HRM_K &hrm RGUI K
+  #define HRM_L &hrm RCTL L
 #else
   #define HRM_S &kp S
   #define HRM_D &kp D
