@@ -39,6 +39,9 @@
   #define HRM_J &hrm LALT J
   #define HRM_K &hrm RGUI K
   #define HRM_L &hrm RCTL L
+
+  #define HRM_STAB &hrm LGUI RS(TAB)
+  #define HRM_TAB &hrm LALT TAB
 #else
   #define HRM_S &kp S
   #define HRM_D &kp D
